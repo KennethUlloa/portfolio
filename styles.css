@@ -98,4 +98,8 @@ h2 {
     }
 }
 
-
+@media (max-width: 450px) {
+    :root {
+        font-size: 12px;
+    }
+}
