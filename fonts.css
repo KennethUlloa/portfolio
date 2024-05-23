@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Quicksand;
+  src: url('/fonts/Quicksand-VariableFont_wght.ttf');
+
+}
+
+:root {
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+
+
+

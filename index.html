@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Kenneth Ulloa | Portfolio</title>
+  </head>
+  <body class="bg-darkerblue px-24 md:px-56 relative">
+    <div class="absolute w-full top-0 left-0 right-0 bottom-0 overflow-hidden -z-10">
+      <div class="dot opacity-35 cyanide" style="font-size: 96rem; left: 50%; top: -32rem; --x-start: -50%">0</div>
+      <div class="dot opacity-15 aqua" style="font-size: 74rem; left: 14rem; top: 18rem; --x-start: -50%">0</div>
+      <div class="dot opacity-15 aqua" style="font-size: 74rem; left: 75%;top: 48rem; --x-start: -50%">0</div>
+      <div class="dot opacity-15 cyanide" style="font-size: 160rem; left: 50%; top: 64rem; --x-start: -50%">0</div>
+    </div>
+    <section class="w-full py-28 flex flex-col justify-center items-center">
+        <img src="img/profile.png" alt="Kenneth Ulloa" class="rounded-full w-[12rem] h-[12rem] mb-5">        
+        <h1 class="text-center">Kenneth Ulloa</h1>
+        <a href="mailto:ulloakenth@gmail.com?subject=Consulta&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios." class="text-xl mb-10">ulloakenth@gmail.com</a>
+        <div class="flex gap-10 items-center p-1">
+          <a href="https://www.linkedin.com/in/kenneth-ulloa-2b2459260">
+            <i svg="linkedin" class="text-6xl svg-hover"></i>
+          </a>
+          <a href="#">
+            <i svg="instagram" class="text-6xl svg-hover"></i>
+          </a>
+          <a href="https://github.com/KennethUlloa" target="_blank">
+            <i svg="github" class="text-6xl svg-hover"></i>
+          </a>
+        </div>
+    </section>
+    <section class="w-full py-24 flex flex-col justify-center items-center">
+      <h2 class="font-bold mb-10 text-center">Sobre mí</h2>
+      <p class="text-center text-2xl marked">Soy ingeniero de Software, me apasiona el <span>desarrollo web</span>, en especial el <span>back-end</span> y el <span>diseño UI</span>. Me considero autodidacta y un curioso por naturaleza, siempre estoy mejorando mis habilidades y adquiriendo nuevos conocimientos.</p>
+    </section>
+    <section class="w-full my-10 flex flex-col justify-center items-center">
+      <h2 class="font-bold mb-10 text-center">Experiencia</h2>
+      <div id="experience-panel">
+      </div>
+    </section>
+    <section class="w-full py-24 flex flex-col justify-center items-center">
+      <h2 class="font-bold mb-10 text-center">Proyectos</h2>
+      <div id="projects-panel" class="grid lg:grid-cols-2 grid-cols-1 gap-8"></div>
+      
+    </section>
+    <section class="w-full py-24 flex flex-col justify-center items-center">
+      <h2 class="font-bold mb-10 text-center">Pila de tecnologías</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-2xl md:gap-8 gap-16" id="tech-stack-panel">
+      </div>
+    </section>
+    <section class="w-full py-24 flex flex-col justify-center items-center">
+      <h2 class="font-bold mb-10 text-center">Habilidades y conocimientos</h2>
+      <div class="grid grid-cols-1  lg:grid-cols-2 w-full gap-8" id="abilities-panel">
+      </div>
+    </section>
+    
+    
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
