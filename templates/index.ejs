@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title><%= name %> | Portfolio</title>
+  </head>
+  <body class="bg-darkerblue px-10 md:px-56 relative">
+    <div class="absolute w-full top-0 left-0 right-0 bottom-0 overflow-hidden -z-10">
+      <div class="dot opacity-35 cyanide" style="font-size: 96rem; left: 50%; top: -32rem; --x-start: -50%">0</div>
+      <div class="dot opacity-15 aqua" style="font-size: 74rem; left: 14rem; top: 18rem; --x-start: -50%">0</div>
+      <div class="dot opacity-15 aqua" style="font-size: 74rem; left: 75%;top: 48rem; --x-start: -50%">0</div>
+      <div class="dot opacity-15 cyanide" style="font-size: 160rem; left: 50%; top: 64rem; --x-start: -50%">0</div>
+    </div>
+    <section class="w-full py-28 flex flex-col justify-center items-center">
+        <img src="<%= profileImg %>" alt="<%= name %>" class="rounded-full w-[12rem] h-[12rem] mb-5">        
+        <h1 class="text-center"><%= name %></h1>
+        <a href="<%- email.url %>" class="text-xl mb-10">
+            <%= email.dir %>
+        </a>
+        <div class="flex gap-10 items-center p-1">
+            <% profileLinks.forEach(function(link) { %>
+          <a href="<%= link.url %>" target="_blank">
+            <i svg="<%= link.icon %>" class="text-6xl svg-hover">
+                <%- ICONS[link.icon] %>
+            </i>
+          </a>
+        <% }); %>
+        </div>
+    </section>
+    <section class="w-full py-24 flex flex-col justify-center items-center">
+      <h2 class="font-bold mb-10 text-center">Sobre mí</h2>
+      <p class="text-center text-2xl marked">
+        <%- aboutMe %>
+      </p>
+    </section>
+    <section class="w-full my-10 flex flex-col justify-center items-center">
+      <h2 class="font-bold mb-10 text-center">Experiencia</h2>
+      <div id="experience-panel">
+        <% experience.forEach(function(exp) { %>
+            <%- include('experience', {...exp, ICONS}); %>
+        <% }) %>
+      </div>
+    </section>
+    <section class="w-full py-24 flex flex-col justify-center items-center">
+      <h2 class="font-bold mb-10 text-center">Proyectos</h2>
+      <div id="projects-panel" class="grid lg:grid-cols-2 grid-cols-1 gap-8">
+        <% projects.forEach(function(project) { %>
+          <%- include('project', {project, ICONS}); %>
+      <% }) %>
+      </div>
+      
+    </section>
+    <section class="w-full py-24 flex flex-col justify-center items-center">
+      <h2 class="font-bold mb-10 text-center">Pila de tecnologías</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-2xl md:gap-8 gap-16" id="tech-stack-panel">
+        <% technologies.forEach(function(tech) { %>
+          <%- include('tech', {tech, ICONS}); %>
+      <% }) %>
+      </div>
+    </section>
+    <section class="w-full py-24 flex flex-col justify-center items-center">
+      <h2 class="font-bold mb-10 text-center">Habilidades y conocimientos</h2>
+      <div class="grid grid-cols-1  lg:grid-cols-2 w-full gap-8" id="abilities-panel">
+        <% abilities.forEach(function(ability) { %>
+          <%- include('ability', {ability, ICONS}); %>
+      <% }) %>
+      </div>
+    </section>
+  </body>
+</html>

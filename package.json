@@ -4,12 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build --base=/portfolio/",
-    "preview": "vite preview"
+    "dev": "vite web",
+    "build": "vite build web --base=/portfolio/ --out-dir ../dist",
+    "preview": "vite preview",
+    "render": "node src/main.js data.local.json web/index.html"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "ejs": "^3.1.10",
     "vite": "^5.2.0"
   },
   "dependencies": {
