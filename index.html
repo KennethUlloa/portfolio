@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <title>Kenneth Ulloa | Portfolio</title>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-Bsg3Ing7.css">
+    <script type="module" crossorigin src="/portfolio/assets/index-DfE_QpKD.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-BTMelw1C.css">
   </head>
   <body class="bg-darkerblue px-10 md:px-56 relative">
     <div class="absolute w-full top-0 left-0 right-0 bottom-0 overflow-hidden -z-10">
@@ -17,9 +18,12 @@
     <section class="w-full py-28 flex flex-col justify-center items-center">
         <img src="img/profile.png" alt="Kenneth Ulloa" class="rounded-full w-[12rem] h-[12rem] mb-5">        
         <h1 class="text-center">Kenneth Ulloa</h1>
-        <a href="mailto:ulloakenth@gmail.com?subject=Consulta&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios." class="text-xl mb-10">
-            ulloakenth@gmail.com
-        </a>
+        <button class="btn disabled border-aqua-self border rounded-lg px-6 py-3 flex gap-3 items-center *:text-aqua-self my-2 link" id="email">
+          <span id="email-text"><a href="https://support.google.com/adsense/answer/12654?hl=es" target="_blank">Activa el soporte de JavaScript para copiar el correo</a></span>
+          <i svg="check" class="text-lg flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+          </i>
+        </button>
         <div class="flex gap-10 items-center p-1">
             
           <a href="https://www.linkedin.com/in/kenneth-ulloa-2b2459260" target="_blank">
@@ -45,12 +49,12 @@
     <section class="w-full py-24 flex flex-col justify-center items-center">
       <h2 class="font-bold mb-10 text-center">Sobre mí</h2>
       <p class="text-center text-2xl marked">
-        Ingeniero de software graduado en la <a href="https://fis.epn.edu.ec/index.php/es/" target="_blank"><span>Facultad de Sistemas (EPN)</span></a>, apasionado por el <span>desarrollo web</span>, especialmente el <span>back-end</span> y el <span>diseño UI</span>. Autodidacta, siempre mejorando mis habilidades y adquiriendo nuevos conocimientos.
+        Ingeniero de software graduado en la <a href="https://fis.epn.edu.ec/index.php/es/" target="_blank"><span>Escuela Politécnica Nacional</span></a>, apasionado por el <span>desarrollo web</span>, especialmente el <span>back-end</span> y el <span>diseño UI</span>. Autodidacta, siempre mejorando mis habilidades y adquiriendo nuevos conocimientos.
       </p>
     </section>
     <section class="w-full my-10 flex flex-col justify-center items-center">
       <h2 class="font-bold mb-10 text-center">Experiencia</h2>
-      <div id="experience-panel">
+      <div id="experience-panel" class="flex flex-col gap-8">
         
             <div class="bg-black bg-opacity-25 p-8 text-2xl gap-3 flex flex-col rounded-2xl">
     <h3 class="font-bold text-3xl">SLB</h3>
@@ -68,13 +72,29 @@
     </ul>
 </div>
         
+            <div class="bg-black bg-opacity-25 p-8 text-2xl gap-3 flex flex-col rounded-2xl">
+    <h3 class="font-bold text-3xl">Slon Corp</h3>
+    <span class="text-aqua-self">Desarrollador</span>
+    <span>Diciembre 2024 - Actualidad </span>
+    <ul>
+        <li class="flex mb-3">
+            <i svg="" class="mt-[0.2em] mr-3 text-aqua-self"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></i>
+            <p class="marked">Desarrollo backend/frontend con <span>Javascript</span>.</p>
+        </li>
+        <li class="flex mb-3">
+            <i svg="" class="mt-[0.2em] mr-3 text-aqua-self"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></i>
+            <p class="marked">Desarrollo personalizado en organizaciones de <span>Salesforce</span> (Apex, LWC, Visualforce, entre otros).</p>
+        </li>
+    </ul>
+</div>
+        
       </div>
     </section>
     <section class="w-full py-24 flex flex-col justify-center items-center">
       <h2 class="font-bold mb-10 text-center">Proyectos</h2>
       <div id="projects-panel" class="grid lg:grid-cols-2 grid-cols-1 gap-8">
         
-          <div class="bg-black bg-opacity-25 p-8 text-2xl gap-3 flex flex-col rounded-2xl h-[100%]">
+          <div class="bg-black bg-opacity-25 p-8 text-2xl gap-5 flex flex-col rounded-2xl h-[100%]">
     <h2 class="font-bold text-3xl">Dependify</h2>
     <p class="marked">
         Librería de <span>Python</span> que automatiza la inyección de dependencias a través de funciones y decoradores para el registro y posterior inyección.
@@ -98,7 +118,7 @@
     </div> 
 </div>
       
-          <div class="bg-black bg-opacity-25 p-8 text-2xl gap-3 flex flex-col rounded-2xl h-[100%]">
+          <div class="bg-black bg-opacity-25 p-8 text-2xl gap-5 flex flex-col rounded-2xl h-[100%]">
     <h2 class="font-bold text-3xl">Forgeit</h2>
     <p class="marked">
         Librería de <span>Python</span> para la creación y manejo de la estructura de un proyecto de manera automática con el fin de reducir el tiempo utilizado con el código “boilerplate”. Soporta diferentes motores de plantillas como <span>Jinja2</span>.
@@ -431,6 +451,12 @@
 
 </svg></i>
     <span>Node.js</span>
+</div>
+
+      
+          <div class="flex flex-col items-center gap-3">
+    <i svg="" class="text-8xl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M248.9 245.6h-26.4c.7-5.2 3.3-14.1 13.6-14.1 6.8 0 12 3.8 12.7 14.1zm136.7-13.9c-.5 0-14.1-1.8-14.1 20s13.6 20 14.1 20c13 0 14.1-13.5 14.1-20 0-21.8-13.7-20-14.1-20zm-243.2 23.8a8.6 8.6 0 0 0 -3.3 7.3c0 4.8 2.1 6.1 3.3 7.1 4.7 3.7 15.1 2.1 20.9 1v-16.9c-5.3-1.1-16.7-2-20.9 1.7zM640 232c0 87.6-80 154.4-165.4 136.4-18.4 33-70.7 70.8-132.2 41.6-41.2 96.1-177.9 92.2-213.8-5.2C8.9 428.8-50.2 266.5 53.4 205.6 18.6 126.2 76 32 167.7 32a124.2 124.2 0 0 1 98.6 48.7c20.7-21.4 49.4-34.8 81.2-34.8 42.3 0 79 23.5 98.8 58.6C539 63.8 640 132.7 640 232zm-519.6 31.8c0-11.8-11.7-15.2-17.9-17.2-5.3-2.1-13.4-3.5-13.4-8.9 0-9.5 17-6.7 25.2-2.1 0 0 1.2 .7 1.6-.5 .2-.7 2.4-6.6 2.6-7.3a1.1 1.1 0 0 0 -.7-1.4c-12.3-7.6-40.7-8.5-40.7 12.7 0 12.5 11.5 15.4 17.9 17.2 4.7 1.6 13.2 3 13.2 8.7 0 4-3.5 7.1-9.2 7.1a31.8 31.8 0 0 1 -19-6.4c-.5-.2-1.4-.7-1.7 .7l-2.4 7.5c-.5 .9 .2 1.2 .2 1.4 1.8 1.4 10.3 6.6 22.8 6.6 13.2 0 21.4-7.1 21.4-18.1zm32-42.6c-10.1 0-18.7 3.2-21.4 5.2a1 1 0 0 0 -.2 1.4l2.6 7.1a1 1 0 0 0 1.2 .7c.7 0 6.8-4 16.9-4 4 0 7.1 .7 9.2 2.4 3.6 2.8 3.1 8.3 3.1 10.6-4.8-.3-19.1-3.4-29.4 3.8a16.9 16.9 0 0 0 -7.3 14.5c0 5.9 1.5 10.4 6.6 14.4 12.2 8.2 36.3 2 38.1 1.4 1.6-.3 3.5-.7 3.5-1.9v-33.9c0-4.6 .3-21.6-22.8-21.6zM199 200.2a1.1 1.1 0 0 0 -1.2-1.2H188a1.1 1.1 0 0 0 -1.2 1.2v79a1.1 1.1 0 0 0 1.2 1.2h9.9a1.1 1.1 0 0 0 1.2-1.2zm55.8 28.9c-2.1-2.3-6.8-7.5-17.7-7.5-3.5 0-14.2 .2-20.7 8.9-6.4 7.6-6.6 18.1-6.6 21.4 0 3.1 .2 14.3 7.1 21.2 2.6 2.9 9.1 8.2 22.8 8.2 10.8 0 16.5-2.4 18.6-3.8 .5-.2 .7-.7 .2-1.9l-2.4-6.8a1.3 1.3 0 0 0 -1.4-.7c-2.6 .9-6.4 2.8-15.3 2.8-17.4 0-16.9-14.7-16.9-16.7h37.2a1.2 1.2 0 0 0 1.2-.9c-.3 0 2.1-14.7-6.1-24.2zm36.7 52.7c13.2 0 21.4-7.1 21.4-18.1 0-11.8-11.7-15.2-17.9-17.2-4.1-1.7-13.4-3.4-13.4-8.9 0-3.8 3.3-6.4 8.5-6.4a38.1 38.1 0 0 1 16.7 4.2s1.2 .7 1.7-.5c.2-.7 2.4-6.6 2.6-7.3a1.1 1.1 0 0 0 -.7-1.4c-7.9-4.9-16.7-4.9-20.2-4.9-12 0-20.5 7.3-20.5 17.6 0 12.5 11.5 15.4 17.9 17.2 6.1 2 13.2 3.3 13.2 8.7 0 4-3.5 7.1-9.2 7.1a31.8 31.8 0 0 1 -19-6.4 1 1 0 0 0 -1.7 .7l-2.4 7.5c-.5 .9 .2 1.2 .2 1.4 1.7 1.4 10.3 6.6 22.8 6.6zM357.1 224c0-.7-.2-1.2-1.2-1.2h-11.8c0-.1 .9-8.9 4.5-12.5 4.2-4.2 11.8-1.6 12-1.6 1.2 .5 1.4 0 1.6-.5l2.8-7.8c.7-.9 0-1.2-.2-1.4-5.1-2-17.4-2.9-24.5 4.2-5.5 5.5-7 13.9-8 19.5h-8.5a1.3 1.3 0 0 0 -1.2 1.2l-1.4 7.8c0 .7 .2 1.2 1.2 1.2h8.2c-8.5 47.9-8.8 50.2-10.4 55.5-1.1 3.6-3.3 6.9-5.9 7.8-.1 0-3.9 1.7-9.6-.2 0 0-.9-.5-1.4 .7-.2 .7-2.6 6.8-2.8 7.5s0 1.4 .5 1.4c5.1 2 13 1.8 17.9 0 6.3-2.3 9.7-7.9 11.5-12.9 2.8-7.7 2.8-9.8 11.8-59.7h12.2a1.3 1.3 0 0 0 1.2-1.2zm53.4 16c-.6-1.7-5.1-18.1-25.2-18.1-15.3 0-23 10-25.2 18.1-1 3-3.2 14 0 23.5 .1 .3 4.4 18.1 25.2 18.1 15 0 22.9-9.6 25.2-18.1 3.2-9.6 1-20.5 0-23.5zm45.4-16.7c-5-1.7-16.6-1.9-22.1 5.4v-4.5a1.1 1.1 0 0 0 -1.2-1.2h-9.4a1.1 1.1 0 0 0 -1.2 1.2v55.3a1.1 1.1 0 0 0 1.2 1.2h9.6a1.1 1.1 0 0 0 1.2-1.2v-27.8c0-2.9 .1-11.4 4.5-15.1 4.9-4.9 12-3.4 13.4-3.1a1.6 1.6 0 0 0 1.4-.9 74 74 0 0 0 3.1-8 1.2 1.2 0 0 0 -.5-1.4zm46.8 54.1l-2.1-7.3c-.5-1.2-1.4-.7-1.4-.7-4.2 1.8-10.2 1.9-11.3 1.9-4.6 0-17.2-1.1-17.2-19.8 0-6.2 1.9-19.8 16.5-19.8a34.9 34.9 0 0 1 11.5 1.7s.9 .5 1.2-.7c.9-2.6 1.6-4.5 2.6-7.5 .2-.9-.5-1.2-.7-1.2-11.6-3.9-22.3-2.5-27.8 0-1.6 .7-16.2 6.5-16.2 27.5 0 2.9-.6 30.1 28.9 30.1a44.5 44.5 0 0 0 15.5-2.8 1.3 1.3 0 0 0 .5-1.4zm53.9-39.5c-.8-3-5.4-16.2-22.4-16.2-16 0-23.5 10.1-25.6 18.6a38.6 38.6 0 0 0 -1.7 11.8c0 25.9 18.8 29.4 29.9 29.4 10.8 0 16.5-2.4 18.6-3.8 .5-.2 .7-.7 .2-1.9l-2.4-6.8a1.3 1.3 0 0 0 -1.4-.7c-2.6 .9-6.4 2.8-15.3 2.8-17.4 0-16.9-14.7-16.9-16.7h37.2a1.3 1.3 0 0 0 1.2-.9c-.2 0 .9-7.1-1.4-15.5zm-23.3-6.4c-10.3 0-13 9-13.6 14.1H546c-.9-11.9-7.6-14.1-12.7-14.1z"/></svg></i>
+    <span>Salesforce</span>
 </div>
 
       
