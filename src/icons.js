@@ -20,4 +20,7 @@ export const ICONS = {
     "linkedin": Icon("./web/icons/linkedin.svg"),
     "instagram": Icon("./web/icons/instagram.svg"),
     "github": Icon("./web/icons/github.svg"),
+    "salesforce": Icon("./web/icons/salesforce.svg"),
+    "email": Icon("./web/icons/email.svg"),
+    "circle-check": Icon("./web/icons/circle-check.svg")
 }

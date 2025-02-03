@@ -110,3 +110,7 @@ h2 {
         font-size: 12px;
     }
 }
+
+.btn.disabled i {
+    display: none;
+}

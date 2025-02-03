@@ -18,9 +18,12 @@
     <section class="w-full py-28 flex flex-col justify-center items-center">
         <img src="<%= profileImg %>" alt="<%= name %>" class="rounded-full w-[12rem] h-[12rem] mb-5">        
         <h1 class="text-center"><%= name %></h1>
-        <a href="<%- email.url %>" class="text-xl mb-10">
-            <%= email.dir %>
-        </a>
+        <button class="btn disabled border-aqua-self border rounded-lg px-6 py-3 flex gap-3 items-center *:text-aqua-self my-2 link" id="email">
+          <span id="email-text"><%- fallbackCopyEmail %></span>
+          <i svg="check" class="text-lg flex items-center">
+            <%- ICONS['circle-check'] %>
+          </i>
+        </button>
         <div class="flex gap-10 items-center p-1">
             <% profileLinks.forEach(function(link) { %>
           <a href="<%= link.url %>" target="_blank">
@@ -39,7 +42,7 @@
     </section>
     <section class="w-full my-10 flex flex-col justify-center items-center">
       <h2 class="font-bold mb-10 text-center">Experiencia</h2>
-      <div id="experience-panel">
+      <div id="experience-panel" class="flex flex-col gap-8">
         <% experience.forEach(function(exp) { %>
             <%- include('experience', {...exp, ICONS}); %>
         <% }) %>
@@ -70,5 +73,6 @@
       <% }) %>
       </div>
     </section>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

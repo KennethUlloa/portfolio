@@ -7,7 +7,7 @@
     "dev": "vite web",
     "build": "vite build web --base=/portfolio/ --out-dir ../dist",
     "preview": "vite preview",
-    "render": "node src/main.js data.local.json web/index.html"
+    "render": "node src/main.js data.local.json web/"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
